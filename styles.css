@@ -1,0 +1,151 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+body.light-mode .theme-toggle {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: blue;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #00aaff;
+    color: #121212;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    width: 50%;
+    border-radius: 20px;
+    border: 2px solid #007BFF;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Genre Filter */
+.genre-filter {
+    margin-bottom: 20px;
+}
+
+/* Book Card */
+.book {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.book h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.book p {
+    font-size: 0.9rem;
+}
+
+/* Reading Progress Bar */
+.progress-container {
+    width: 100%;
+    background: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 10px;
+    background: #007bff;
+    transition: width 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+
+select {
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
