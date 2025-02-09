@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="light-mode">
+    <div class="container">
+        <h1>Book Library Organizer</h1>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+        <!-- search box -->
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search for books..." onkeydown="handleSearchKey(event)">
+            <button onclick="searchBooks()">Search</button>
+        </div>
+
+        <!-- genre filter -->
+        <div class="genre-filter">
+            <label for="genre">Filter by Genre:</label>
+            <select id="genre">
+                <option value="">All</option>
+                <option value="fiction">Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="history">History</option>
+                <option value="science">Science</option>
+            </select>
+        </div>
+
+
+
+      
+
+        <!-- error message -->
+        <p id="error-message" class="error-message"></p>
+
+        <!-- results section -->
+        <div id="results"></div>
+
+        <!-- library section -->
+        <h2>My Library</h2>
+        <div id="library"></div>
+    </div>
+</body>
+</html>
